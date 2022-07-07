@@ -28,5 +28,10 @@ cd moon
 pip3 install -r requirements.txt
 sudo python3 moon.py # moon needs superuser privileges
 ```
-
+```
+pkg install python3
+git clone https://github.com/TheSadError/moon
+cd moon
+pip3 install -r requirements.txt
+sudo python3 moon.py # moon needs superuser privileges
 ```
