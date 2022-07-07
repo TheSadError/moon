@@ -1,5 +1,5 @@
 # Mr. moon
-Mr. moon is hacking tool for cracking &amp; attacking. Incluedes dangerous tools in it. I am not responsible any of actions you did with this tool. Dont forget to star project after use it.
+Mr. moon is hacking tool for cracking &amp; attacking. Incluedes dangerous tools in it. I am not responsible any of actions you did with this tool. Dont forget to star project after use it. **Mr. Moon is updateing day by day. For get notfications watch my project and star it :>**
 
 ## Tools
 ```js
