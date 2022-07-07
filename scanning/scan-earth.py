@@ -38,7 +38,7 @@ def menu():
                         IP  : {ip}
     """)
     tree = Tree(Fore.RED+"[Scanning Tools]")
-    tree.add(Fore.RED+"[1] WInformation Gathering By Username (OSINT)")
+    tree.add(Fore.RED+"[1] Information Gathering By Username (OSINT)")
     tree.add(Fore.RED+"[2] Port Scanning (Find vulnerable port with versions)")
 
     rprint(tree)
@@ -50,7 +50,9 @@ def main():
     cmd = input(Fore.BLUE+"[!] Choice : ")
 
     if cmd == "1":
-        system("sudo python3 ./crack/crack-earth.py")
+        system("sudo python3 ./scanning/osint.py")
+    elif cmd == "2":
+        system("sudo python3 ./scanning/portscan.py")
 
 if __name__ == "__main__":
     user = geteuid()
