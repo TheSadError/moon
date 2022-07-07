@@ -2,9 +2,11 @@ from os import *
 from colorama import *
 from rich.tree import Tree
 from rich import print as rprint
-
+import socket
 def menu():
-    print(Fore.BLACK+"""
+    hostname=socket.gethostname()   
+    ip=socket.gethostbyname(hostname) 
+    print(Fore.BLACK+f"""
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⣰⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣧⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣦⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠙⢿⣦⡀⠀⠀⠀⢀⣾⡿⠉⣿⡄⠀⠀⠀⠀⠀
@@ -30,18 +32,22 @@ def menu():
     ⠀⠀⠀⠀⠀⠈⠿⣶⣶⣶⣶⣶⣾⣶⣾⣷⣶⣶⣶⣶⣷⣾⣷⣶⣶⣾⡿⠀⠀⠀⠀⠀
 
                         ©️ Project : Moon Copright to TheSadError
+
+                        ---INFO---
+                        DIR : /moon/crack/
+                        IP  : {ip}
     """)
     tree = Tree(Fore.RED+"[Tools]")
     crack = Tree(Fore.BLUE+"[1] Cracking")
     attack = Tree(Fore.BLUE+"[2] Attack")
 
     # Cracking Tools List
-    crack.add(Fore.RED+"Wifi Crack")
-    crack.add(Fore.RED+"FTP website admin brute force")
-    crack.add(Fore.RED+"SSH website admin brute force")
+    crack.add(Fore.RED+"[1] Wifi Crack")
+    crack.add(Fore.RED+"[2] FTP website admin brute force")
+    crack.add(Fore.RED+"[3] SSH website admin brute force")
 
     # Attacking Tools List
-    attack.add(Fore.RED+"DDOS/DOS Websites stresser")
+    attack.add(Fore.RED+"[1] DDOS/DOS Websites stresser")
 
     tree.add(crack)
     tree.add(attack)
@@ -51,8 +57,15 @@ def menu():
 def main():
     menu()
     print(" ")
-    cmd = input(Fore.RED+"[!] Choice : ")
+    cmd = input(Fore.BLUE+"[!] Choice : ")
+
+    if cmd == "1":
+        system("sudo python3 ./crack/crack-earth.py")
 
 if __name__ == "__main__":
-    system("clear")
-    main()
+    user = geteuid()
+    if user == 0:
+        system("clear")
+        main()
+    else:
+        print(Fore.RED+"[!] WARNING : By Moon need privileges! Please run code by sudo!")
