@@ -19,15 +19,7 @@ cd moon
 pip3 install -r requirements.txt
 sudo python3 moon.py # moon needs superuser privileges
 ```
-
-```
-## Installation /Kali,Parrot,ARCH ... Linux/
-```js
-git clone https://github.com/TheSadError/moon
-cd moon
-pip3 install -r requirements.txt
-sudo python3 moon.py # moon needs superuser privileges
-```
+## Installation /Termux && Virtual Terminals/
 ```
 pkg install python3
 git clone https://github.com/TheSadError/moon
