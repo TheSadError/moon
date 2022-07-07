@@ -68,4 +68,4 @@ if __name__ == "__main__":
         system("clear")
         main()
     else:
-        print(Fore.RED+"[!] WARNING : By Moon need privileges! Please run code by sudo!")
+        print(Fore.RED+"[!] WARNING : Mr. Moon need privileges! Please run code by sudo!")
