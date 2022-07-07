@@ -40,6 +40,7 @@ def menu():
     tree = Tree(Fore.RED+"[Tools]")
     crack = Tree(Fore.BLUE+"[1] Cracking")
     attack = Tree(Fore.BLUE+"[2] Attack")
+    scan = Tree(Fore.BLUE+"[3] Scanning")
 
     # Cracking Tools List
     crack.add(Fore.RED+"[1] Wifi Crack")
@@ -49,8 +50,14 @@ def menu():
     # Attacking Tools List
     attack.add(Fore.RED+"[1] DDOS/DOS Websites stresser")
 
+    # Scanning  Tools List 
+
+    scan.add(Fore.RED+"[1] Information Gathering By Username (OSINT)")
+    scan.add(Fore.RED+"[2] Port Scanning (Find vulnerable port with versions)")
+
     tree.add(crack)
     tree.add(attack)
+    tree.add(scan)
     rprint(tree)
 
 
@@ -61,6 +68,10 @@ def main():
 
     if cmd == "1":
         system("sudo python3 ./crack/crack-earth.py")
+    elif cmd == "2":
+        system("sudo python3 ./attack/attack-earth.py")
+    elif cmd == "3":
+        system("sudo python3 ./scanning/scan-earth.py")
 
 if __name__ == "__main__":
     user = geteuid()
