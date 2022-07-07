@@ -12,10 +12,21 @@ Mr. moon is hacking tool for cracking &amp; attacking. Incluedes dangerous tools
 └── [2] Attack
     └── [1] DDOS/DOS Websites stresser
 ```
-## Installation
+## Installation /Kali,Parrot,ARCH ... Linux/
 ```js
 git clone https://github.com/TheSadError/moon
 cd moon
 pip3 install -r requirements.txt
 sudo python3 moon.py # moon needs superuser privileges
+```
+
+```
+## Installation /Kali,Parrot,ARCH ... Linux/
+```js
+git clone https://github.com/TheSadError/moon
+cd moon
+pip3 install -r requirements.txt
+sudo python3 moon.py # moon needs superuser privileges
+```
+
 ```
