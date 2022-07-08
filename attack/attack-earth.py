@@ -38,7 +38,7 @@ def menu():
                         IP  : {ip}
     """)
     tree = Tree(Fore.RED+"[Attack Tools]")
-    tree.add(Fore.RED+"[1] DDoS/DoS Attack to website!")
+    tree.add(Fore.BLUE+"[1] DDoS/DoS Attack to website!")
 
     rprint(tree)
 
