@@ -38,8 +38,8 @@ def menu():
                         IP  : {ip}
     """)
     tree = Tree(Fore.RED+"[Scanning Tools]")
-    tree.add(Fore.RED+"[1] Information Gathering By Username (OSINT)")
-    tree.add(Fore.RED+"[2] Port Scanning (Find vulnerable port with versions)")
+    tree.add(Fore.BLUE+"[1] Information Gathering By Username (OSINT)")
+    tree.add(Fore.BLUE+"[2] Port Scanning (Find vulnerable port with versions)")
 
     rprint(tree)
 
