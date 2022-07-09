@@ -88,7 +88,7 @@ def main():
     if n == "Y" or n == "y":
         wordlist = input("[!] Enter wordlist file dir : ")
     else:
-        wordlist = "./rockyou.txt"
+        wordlist = "./smallrockyou.txt"
     attackv1(target, username, wordlist)
     attack2(targevt)
     print(Fore.BLUE+"\n[+] Brute force finished.")
