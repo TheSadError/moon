@@ -41,6 +41,7 @@ def menu():
     tree.add(Fore.BLUE+"[1] Wifi Crack")
     tree.add(Fore.BLUE+"[2] FTP website admin brute force")
     tree.add(Fore.BLUE+"[3] SSH website admin brute force")
+    tree.add(Fore.BLUE+"[4] Instagram brute force")
     rprint(tree)
 
 
@@ -55,6 +56,8 @@ def main():
         system("sudo python3 ./crack/ftp.py")
     elif cmd == "3":
         system("sudo python3 ./crack/ssh.py")
+    elif cmd == "4":
+        system("sudo python3 ./crack/insta.py")
 
 if __name__ == "__main__":
     user = geteuid()
