@@ -82,10 +82,13 @@ def main():
             print(Fore.RED+"\n[!] There is no such wordlist file. \n")
             sys.exit(0)
 
-    target = input("[!] Enter target ip : ")
-    username = input("[!] Enter username : ")
-    wordlist = input("[!] Enter wordlist file dir : ")
-
+    target = input("[!] Enter target ip : ") # 198.37.116.30
+    username = input("[!] Enter username : ") # admin
+    n = input("[!] Want spesific wordlist file ? [N/y] : ")
+    if n == "Y" or n == "y":
+        wordlist = input("[!] Enter wordlist file dir : ")
+    else:
+        wordlist = "./rockyou.txt"
     attackv1(target, username, wordlist)
     attack2(targevt)
     print(Fore.BLUE+"\n[+] Brute force finished.")
